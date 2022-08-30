@@ -284,7 +284,7 @@ div#panel:before {
 }
 
 div#panel2::before {
-    content: "WARNING";
+    content: "CẢNH BÁO";
 	top: 3vmin;
 	position: relative;
 	font-size: 10vmin;
