@@ -6,7 +6,7 @@ var turnOffHor = document.getElementById("closing");
 var detonate = document.getElementById("detonate");
 var again = document.getElementById("again");
 var panel2 = document.getElementById("panel2");
-alarm.volume = 0.5; //volume level
+alarm.volume = 0.45; //volume level
 
 var time = document.getElementById("time");
 function showCountDown() {
@@ -25,7 +25,7 @@ function showCountDown() {
 			turnOffHor.classList.add("close");
 			reload.classList.add("show");
 			alarm.pause();
-		}, 1500);
+		}, 3000);
 	}
    
 }
@@ -40,7 +40,7 @@ var btn = document.getElementById("activate");
 activate.addEventListener("click", function () {
 	this.classList.add("pushed");
 	alarm.load();
-	alarm.currentTime = 10.1;
+	//alarm.currentTime = 10.1;
 	alarm.play();
 	setTimeout(function () {
 		panel.classList.add("show");
